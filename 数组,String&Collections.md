@@ -73,7 +73,7 @@
     - String String.trim()/:去除前后所有空白字符，包含 ('/t', '/n', '/v', '/f', '/r', ' ', '/x0085', '/x00a0', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '?', '/u2028', '/u2029', ' ', '?')
     - toLowCase,toUpCase:转换大小写
 - StringUtils，是Apache common工具包提供的String工具类：
-    - 使用时需要导入org.apache.commons.lang3.StringUtils
+    - 使用时需要导入org.apache.commons.lang3.StringUtils,注意包名，idea可能默认给你导进去sun的
     - 常用方法有：
         - 判空类：StringUtils.isEmpty("str"),isNotEmpty,isBlank,isNotBlank
         - 去空白除类：StringUtils.trim("str")只去除控制字符，strip("str")/stripStart,stripEnd只去除两端空白字符,stripAll去除所有空白字符
@@ -107,7 +107,7 @@
         - 数组转字符串StringUtil.convString(String []/List,","),第二个参数为分隔符,默认是,
 
 
-# Collection
+# Collection 
 1. Collection 是层次结构 中的根接口
 1. Collection 继承自Iterable,即可迭代，可forearch
 1. Collection 具体有子接口Set 和 List 
@@ -136,3 +136,5 @@
 6. TreeMap 根据键的自然顺序排序，基于红黑树实现
 7. EmnuMap 的键必须是枚举值,
 4. 非同步类实现，可通过 Map m = Collections.synchronizedMap(new HashMap(...));包装实现同步
+
+//TODO：CCollection类主要方法需要补充
